@@ -1,0 +1,58 @@
+.flex-container-column0 {
+    display: flex;
+    height: 100%;
+    width:15%;
+    float: left;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+.flex-container-column1 {
+  display: flex;
+  height: 100%;
+  width:85%;
+  flex-direction: column; 
+  position: relative;
+  left: 15%;
+  top: 0;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-vica {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+.column0-width {
+  width: 20%
+}
+
+.column1-width {
+  width: 80%
+}
+
+.custom-one-quarter {
+  width: 40%!important
+}
+
+@media screen and (max-width: 800px) {
+  .capa_a_ocultar{
+    display:none;
+  }
+
+  .flex-container-column1{
+    width: 100%;
+    left: 0;
+  }
+}
