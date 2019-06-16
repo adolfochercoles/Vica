@@ -1,4 +1,7 @@
-<?php 
+<?php
+/*
+echo "Mail Sent. Thank you ";
+echo $_POST['submit'];
 if(isset($_POST['submit'])){
     $to = "adolfochercoles@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
@@ -12,10 +15,11 @@ if(isset($_POST['submit'])){
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+      // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
+    */
 ?>
 <!DOCTYPE html>
 <html>
@@ -153,7 +157,7 @@ if(isset($_POST['submit'])){
     </div>
     <div id="comments">
       <h2>Envie sus comentarios</h2>
-      <form action="" method="post">
+      <form action="sendEmail.php" method="post">
         <div class="one_third first">
           <label for="name">Nombre <span>*</span></label>
           <input type="text" name="name" id="name" value="" size="22" required>
@@ -239,7 +243,5 @@ if(isset($_POST['submit'])){
     <script src="../layout/scripts/jquery.min.js"></script>
     <script src="../layout/scripts/jquery.backtotop.js"></script>
     <script src="../layout/scripts/jquery.mobilemenu.js"></script>
-    <script src="../layout/scripts/smtp.js"></script> 
-    <script src="../layout/scripts/consultoria.js"></script>  
   </body>
 </html>
