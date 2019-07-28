@@ -20,13 +20,13 @@
          $mail->isSMTP();                                            // Set mailer to use SMTP
          $mail->Host       = 'smtp.gmail.com';                      // Specify main and backup SMTP servers
          $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-         $mail->Username   = 'adolfochercoles@gmail.com';                     // SMTP username
-         $mail->Password   = 'r0s2rd0Agustin';                               // SMTP password
-         $mail->SMTPSecure = 'TSL';                                  // Enable TLS encryption, `ssl` also accepted
-         $mail->Port       = 25;                                    // TCP port to connect to
+         $mail->Username   = 'infovicaargentinasrl@gmail.com';                     // SMTP username
+         $mail->Password   = 'Vica_ingenieria';                               // SMTP password
+         $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
+         $mail->Port       = 465;                                    // TCP port to connect to
 
          //Recipients
-         $mail->setFrom('adolfochercoles@gmail.com', 'VICA A.O.I.');
+         $mail->setFrom('info.vicaargentinasrl@gmail.com', 'INFO.VICA_ARG_SRL');
          $mail->addAddress($_POST['email']);               // Name is optional
          $mail->addAddress('vicaargentinasrl@gmail.com');               // Name is optional
          $mail->isHTML(true);                                  // Set email format to HTML
